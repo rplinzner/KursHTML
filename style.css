@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: "Helvetica Neue", sans-serif, Arial;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: #118d0d;
+}
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.fotka {
+  width: 20%;
+}
+.main-text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.author-text {
+  font-size: 22px;
+}
+.container {
+  width: 1140px;
+  margin: 20px auto 0 auto;
+}
+.blog-post {
+  width: 75%;
+  float: left;
+  padding-right: 30px;
+}
+.other-posts {
+  width: 25%;
+  float: left;
+}
+.author-box {
+  border-top: 1px solid #5c5c5c;
+  padding-top: 20px;
+}
