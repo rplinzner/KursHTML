@@ -91,11 +91,40 @@ h3 {
   line-height: 125%;
 }
 /* ------ ICONS ------ */
+.icon-big,
+.icon-small {
+  color: #e67e22;
+}
 .icon-big {
   font-size: 350%;
   display: block;
-  color: #e67e22;
   margin-bottom: 10px;
+}
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 120%;
+  margin-right: 5px;
+  /* secrets to align text with icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+/* ------ LINKS ------ */
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 1px;
+  transition: border-bottom 0.2s, color 0.5s;
+}
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* ------ BUTTONS ------ */
@@ -147,6 +176,7 @@ header {
     url(img/hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 .hero-text-box {
@@ -264,9 +294,64 @@ header {
   font-size: 150%;
   margin-right: 20px;
 }
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
 
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ------------------------------ */
+/* CITIES  */
+/* ------------------------------ */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
+}
+/* ------------------------------ */
+/* TESTIMONIALS  */
+/* ------------------------------ */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
+    url(/resources/css/img/back-customers.jpg);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+blockquote {
+  margin-top: 40px;
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+}
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
